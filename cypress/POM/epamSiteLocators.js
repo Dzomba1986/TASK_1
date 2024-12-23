@@ -1,111 +1,111 @@
 
 class epamSite{
       
-        cookyConsentButton() {
+        get cookyConsentButton() {
           return cy.get('#onetrust-accept-btn-handler');
         }
 
-        dropdownMenu() {
+        get dropdownMenu() {
             return cy.get('.hamburger-menu__button');
         }
 
-        aboutLink() {
+        get aboutLink() {
             return cy.get('[href="/about"]');
         }
 
-        downloadDocButton(){
+        get downloadDocButton(){
             return cy.get('[href="https://www.epam.com/content/dam/epam/free_library/EPAM_Corporate_Overview_Q4_EOY.pdf"]');
         }
 
-        docRouth() {
+        get docRouth() {
             return cy.readFile('/Users/Nenad_Damjanovic/Desktop/SQE_TASK_1/cypress/downloads/EPAM_Corporate_Overview_Q4_EOY.pdf');
         }
 
-        epamLogo() {
+        get epamLogo() {
             return cy.get('[class="header__logo header__logo-light"]');
         }
 
-        contacUsButton() {
+        get contacUsButton() {
             return cy.get('[class="button__content button__content--desktop"]').contains('CONTACT US');
         }
 
-        submitButton() {
+        get submitButton() {
             return cy.get('[type="submit"]');
         }
 
-        firstNameError() {
+        get firstNameError() {
             return cy.get('#_content_epam_en_about_who-we-are_contact_jcr_content_content-container_section_section-par_form_constructor_user_first_name-error');
         }
 
-        lastNameError() {
+        get lastNameError() {
             return cy.get('#_content_epam_en_about_who-we-are_contact_jcr_content_content-container_section_section-par_form_constructor_user_last_name-error');
         }
 
-        emailError() {
+        get emailError() {
             return cy.get('#_content_epam_en_about_who-we-are_contact_jcr_content_content-container_section_section-par_form_constructor_user_email-error');
         }
 
-        phoneError() {
+        get phoneError() {
             return cy.get('#_content_epam_en_about_who-we-are_contact_jcr_content_content-container_section_section-par_form_constructor_user_phone-error');
         }
 
-        searchIcon() {
+        get searchIcon() {
             return cy.get('[class="search-icon dark-icon header-search__search-icon"]');
         }
 
-        searchInputField() {
+        get searchInputField() {
             return cy.get('#new_form_search');
         }
 
-        findButton() {
+        get findButton() {
             return cy.get('.bth-text-layer');
         }
 
-        searchResultsCounter() {
+        get searchResultsCounter() {
             return cy.get('.search-results__counter');
         }
 
-        sectionTitleHeader() {
+        get sectionTitleHeader() {
             return cy.get('.museo-sans-light');
         }
 
-        locationTabs() {
+        get locationTabs() {
             return cy.get('[role="tab"]');
         }
 
-        locationCountryList() {
+        get locationCountryList() {
             return cy.get('[class="locations-viewer-23__country-title list"]');
         }
 
-        footerTitles() {
+        get footerTitles() {
             return cy.get('[class="heading large-preheader"]');
         }
 
-        leftSectionPolicieList() {
+        get leftSectionPolicieList() {
             return cy.get('[class="ul policies-left"] li');
         }
 
-        rightSectionPolicieList() {
+        get rightSectionPolicieList() {
             return cy.get('[class="ul policies-right"] li');
         }
 
-        languageButton() {
+        get languageButton() {
             return cy.get('.location-selector__button-language');
         }
 
-        languageUK() {
+        get languageUK() {
             return  cy.get('[lang="uk"]');
         }
 
-        themeSwitcher() {
+        get themeSwitcher() {
             return  cy.get('.theme-switcher');
         }
 
-        themeTitle() {
+        get themeTitle() {
             return  cy.get('[class="theme-switcher-label light-mode-label-text body-text-small"]');
         }
 
-        headerTitle() {
+        get headerTitle() {
             return  cy.get('head title');
         }
 }

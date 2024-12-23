@@ -29,8 +29,6 @@ describe ('Homework Task 1', () => {
             epamSiteLocators.languageButton().eq(0).click();
             epamSiteLocators.languageUK().eq(0).should('have.text', 'Україна (Українська)');
             epamSiteLocators.languageUK().eq(0).click();
-
-            //cy.url().should('eq','https://careers.epam.ua/')
         })
 
         it('Policie list', () =>{
