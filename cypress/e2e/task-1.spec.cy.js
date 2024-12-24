@@ -71,9 +71,6 @@ describe ('Homework Task 1', () => {
             epamSiteLocators.lastNameError().should('be.visible');
             epamSiteLocators.emailError().should('be.visible');
             epamSiteLocators.phoneError().should('be.visible');
-            //cy.get('#_content_epam_en_about_who-we-are_contact_jcr_content_content-container_section_section-par_form_constructor_user_comment_how_hear_about-error').scrollIntoView().eq(1).should('be.visible');
-            //cy.get('[type="checkbox"]').eq(0).realHover();
-            //cy.get('#new_form_gdprConsent-error').should('be.visible');
         })
 
         it('Check company logo', () =>{
