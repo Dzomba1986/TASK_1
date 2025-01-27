@@ -49,6 +49,14 @@ class epamSite{
             return cy.get('#_content_epam_en_about_who-we-are_contact_jcr_content_content-container_section_section-par_form_constructor_user_phone-error');
         }
 
+        howDidYouHearAboutError() {
+            return cy.get("div[class='dropdown-list-ui validation-field'] span[class='select2 select2-container select2-container--default form-component__field']");
+        }
+
+        consentCheckboxError() {
+            return cy.get('[id="new_form_gdprConsent-error"]');
+        }
+
         searchIcon() {
             return cy.get('[class="search-icon dark-icon header-search__search-icon"]');
         }

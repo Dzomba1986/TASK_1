@@ -15,7 +15,6 @@ describe ('Homework Task 1', () => {
 
 
          it('Check switch light/dark mode', () =>{
-            epamSiteLocators.cookyConsentButton().click();
             epamSiteLocators.dropdownMenu().should('be.visible').click();
             epamSiteLocators.themeSwitcher().should('exist').and('have.length', 2);
             epamSiteLocators.themeSwitcher().eq(0).click();
@@ -23,7 +22,6 @@ describe ('Homework Task 1', () => {
         })
 
         it('Switch language', () =>{
-            epamSiteLocators.cookyConsentButton().click();
             epamSiteLocators.dropdownMenu().should('be.visible').click();
             epamSiteLocators.languageButton().should('exist').and('have.length', 2);
             epamSiteLocators.languageButton().eq(0).click();
@@ -62,7 +60,6 @@ describe ('Homework Task 1', () => {
         })
 
         it('Check form fields validation', () =>{
-            epamSiteLocators.cookyConsentButton().click();
             epamSiteLocators.dropdownMenu().should('be.visible').click();
             epamSiteLocators.aboutLink().eq(0).click();
             epamSiteLocators.contacUsButton().click();
@@ -71,10 +68,11 @@ describe ('Homework Task 1', () => {
             epamSiteLocators.lastNameError().should('be.visible');
             epamSiteLocators.emailError().should('be.visible');
             epamSiteLocators.phoneError().should('be.visible');
+            epamSiteLocators.howDidYouHearAboutError().should('be.visible');
+            epamSiteLocators.consentCheckboxError().should('have.text', 'Please check this box if you want to proceed')
         })
 
         it('Check company logo', () =>{
-            epamSiteLocators.cookyConsentButton().click();
             epamSiteLocators.dropdownMenu().should('be.visible').click();
             epamSiteLocators.aboutLink().eq(0).click();
             cy.url().should('eq', `${baseUrl}/about`);
@@ -83,7 +81,6 @@ describe ('Homework Task 1', () => {
         })
 
         it('Check download report', () =>{
-            epamSiteLocators.cookyConsentButton().click();
             epamSiteLocators.dropdownMenu().should('be.visible').click();
             epamSiteLocators.aboutLink().eq(0).click();
             cy.url().should('eq', `${baseUrl}/about`);
